@@ -1,0 +1,1613 @@
+
+/* =========================================
+   SERMONS PAGE
+   LALBANDI FRIENDS CHURCH
+========================================= */
+
+
+/* SERMON HERO */
+
+.sermons-hero {
+
+    min-height: 340px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 35, 82, 0.88),
+            rgba(5, 35, 82, 0.18)
+        ),
+        url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=85')
+        center 55% / cover no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 30px 5%;
+
+    color: #FFFFFF;
+
+}
+
+.sermons-hero-content {
+
+    max-width: 650px;
+
+    text-align: center;
+
+    margin-left: 2%;
+
+}
+
+.sermons-welcome {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 23px;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+
+}
+
+.sermons-hero h1 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 52px;
+
+    font-weight: 700;
+
+    line-height: 1.08;
+
+    margin-bottom: 12px;
+
+    color: #FFFFFF;
+
+}
+
+.sermons-hero h1 span {
+
+    color: #FFD700;
+
+}
+
+.sermons-verse {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 19px;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+    margin-top: 8px;
+
+}
+
+.sermons-verse-reference {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 17px;
+
+    margin-top: 4px;
+
+}
+
+
+/* HERO BUTTONS */
+
+.sermons-hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 22px;
+
+}
+
+.sermons-primary-btn,
+.sermons-outline-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 11px 20px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+
+}
+
+.sermons-primary-btn {
+
+    background: #1261C9;
+
+    color: #FFFFFF;
+
+    border: 1px solid #1261C9;
+
+}
+
+.sermons-primary-btn:hover {
+
+    background: #084B9C;
+
+}
+
+.sermons-outline-btn {
+
+    color: #FFFFFF;
+
+    border: 1.5px solid #FFFFFF;
+
+    background: transparent;
+
+}
+
+.sermons-outline-btn:hover {
+
+    background: #FFFFFF;
+
+    color: #082B59;
+
+}
+
+
+/* =========================================
+   FEATURES BAR
+========================================= */
+
+.sermons-features {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    background: #F0F4FC;
+
+    padding: 15px 4%;
+
+    min-height: 80px;
+
+}
+
+.sermons-feature {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    padding: 4px 12px;
+
+    border-right: 1px solid #A8BDE0;
+
+}
+
+.sermons-feature:last-child {
+
+    border-right: none;
+
+}
+
+.sermons-feature-icon {
+
+    width: 50px;
+
+    height: 50px;
+
+    min-width: 50px;
+
+    background: #1261C9;
+
+    color: #FFFFFF;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 21px;
+
+}
+
+.sermons-feature h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: #082B59;
+
+    margin-bottom: 3px;
+
+}
+
+.sermons-feature p {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 13px;
+
+    color: #102B50;
+
+}
+
+
+/* =========================================
+   MAIN SERMON PANELS
+========================================= */
+
+.sermons-main {
+
+    display: grid;
+
+    grid-template-columns: 1.15fr 1.2fr .82fr;
+
+    gap: 18px;
+
+    padding: 15px 1.8% 20px;
+
+    background: #FFFFFF;
+
+    align-items: stretch;
+
+}
+
+.sermons-panel {
+
+    min-width: 0;
+
+    border: 1px solid #D8E3F4;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #FFFFFF;
+
+    box-shadow: 0 2px 6px rgba(8, 43, 89, 0.04);
+
+}
+
+
+/* PANEL HEADER */
+
+.sermons-panel-header {
+
+    min-height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 6px 14px;
+
+    background: #104782;
+
+    color: #FFFFFF;
+
+}
+
+.sermons-panel-header i {
+
+    font-size: 18px;
+
+}
+
+.sermons-panel-header h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    color: #FFFFFF;
+
+}
+
+
+/* =========================================
+   LATEST SERMON SERIES
+========================================= */
+
+.latest-series-content {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 10px;
+
+    min-height: 132px;
+
+}
+
+.latest-series-content > img {
+
+    width: 42%;
+
+    height: 125px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    flex-shrink: 0;
+
+}
+
+.latest-series-info {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.latest-series-info h3 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #102B50;
+
+    margin-bottom: 12px;
+
+}
+
+.series-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 10px;
+
+}
+
+.watch-video-btn,
+.listen-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 8px 12px;
+
+    border-radius: 22px;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+}
+
+.watch-video-btn {
+
+    background: #083A79;
+
+    color: #FFFFFF;
+
+}
+
+.listen-btn {
+
+    background: #FFFFFF;
+
+    color: #083A79;
+
+    border: 1px solid #083A79;
+
+}
+
+.series-date {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 12px;
+
+    color: #293B54;
+
+}
+
+
+/* =========================================
+   ALL SERMONS LIST
+========================================= */
+
+.all-sermons-list {
+
+    padding: 5px 10px;
+
+}
+
+.sermon-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 8px;
+
+    border-bottom: 1px solid #E0E8F3;
+
+    min-height: 65px;
+
+}
+
+.sermon-item:last-child {
+
+    border-bottom: none;
+
+}
+
+.sermon-date-box {
+
+    width: 55px;
+
+    min-width: 55px;
+
+    height: 54px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #E8F0FF;
+
+    border-radius: 7px;
+
+    color: #082B59;
+
+}
+
+.sermon-date-box span {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+.sermon-date-box strong {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 21px;
+
+    line-height: 1.1;
+
+}
+
+.sermon-item-info {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.sermon-item-info h3 {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #102B50;
+
+    margin-bottom: 3px;
+
+}
+
+.sermon-item-info p {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 12px;
+
+    color: #334155;
+
+}
+
+.sermon-watch-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 9px 13px;
+
+    border-radius: 25px;
+
+    background: #083A79;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    transition: .3s;
+
+}
+
+.sermon-watch-btn:hover {
+
+    background: #1261C9;
+
+}
+
+
+/* =========================================
+   SEARCH & FILTER
+========================================= */
+
+.sermon-search-content {
+
+    padding: 10px 12px 14px;
+
+}
+
+
+/* TABS */
+
+.search-tabs {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    border-bottom: 1px solid #D8E3F4;
+
+    margin-bottom: 10px;
+
+}
+
+.search-tab {
+
+    flex: 1;
+
+    padding: 7px 4px;
+
+    border: none;
+
+    border-bottom: 2px solid transparent;
+
+    background: transparent;
+
+    color: #102B50;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+}
+
+.search-tab.active {
+
+    border-bottom-color: #083A79;
+
+    color: #083A79;
+
+    font-weight: 600;
+
+}
+
+
+/* SEARCH BOX */
+
+.sermon-search-box {
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #D0D9E7;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    margin: 10px 0 16px;
+
+}
+
+.sermon-search-box input {
+
+    flex: 1;
+
+    width: 0;
+
+    min-width: 0;
+
+    padding: 9px 10px;
+
+    border: none;
+
+    outline: none;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 13px;
+
+}
+
+.sermon-search-box button {
+
+    width: 38px;
+
+    height: 36px;
+
+    border: none;
+
+    background: #083A79;
+
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+}
+
+
+/* CATEGORY */
+
+.category-title {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #102B50;
+
+    margin-bottom: 10px;
+
+}
+
+.sermon-categories {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+}
+
+.sermon-categories a {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 13px;
+
+    color: #102B50;
+
+    text-decoration: none;
+
+    padding: 4px 5px;
+
+}
+
+.sermon-categories a:hover {
+
+    color: #1261C9;
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .sermons-main {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .sermons-main .sermons-panel:last-child {
+
+        grid-column: 1 / -1;
+
+    }
+
+    .sermon-categories {
+
+        justify-content: flex-start;
+
+        gap: 20px;
+
+    }
+
+    .sermons-feature {
+
+        gap: 9px;
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .sermons-hero {
+
+        min-height: 360px;
+
+        padding: 35px 5%;
+
+        background-position: center;
+
+    }
+
+    .sermons-hero-content {
+
+        margin: auto;
+
+    }
+
+    .sermons-welcome {
+
+        font-size: 18px;
+
+    }
+
+    .sermons-hero h1 {
+
+        font-size: 37px;
+
+    }
+
+    .sermons-verse {
+
+        font-size: 15px;
+
+    }
+
+    .sermons-verse-reference {
+
+        font-size: 14px;
+
+    }
+
+    .sermons-hero-buttons {
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+    }
+
+    .sermons-primary-btn,
+    .sermons-outline-btn {
+
+        padding: 10px 15px;
+
+        font-size: 12px;
+
+    }
+
+    .sermons-features {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+
+        padding: 15px 3%;
+
+    }
+
+    .sermons-feature {
+
+        border-right: none;
+
+        justify-content: flex-start;
+
+        padding: 5px;
+
+    }
+
+    .sermons-feature-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+        min-width: 42px;
+
+        font-size: 17px;
+
+    }
+
+    .sermons-feature h3 {
+
+        font-size: 14px;
+
+    }
+
+    .sermons-feature p {
+
+        font-size: 11px;
+
+    }
+
+    .sermons-main {
+
+        grid-template-columns: 1fr;
+
+        padding: 12px 4% 20px;
+
+        gap: 15px;
+
+    }
+
+    .sermons-main .sermons-panel:last-child {
+
+        grid-column: auto;
+
+    }
+
+    .sermons-panel-header h2 {
+
+        font-size: 17px;
+
+    }
+
+    .latest-series-content {
+
+        flex-wrap: wrap;
+
+    }
+
+    .latest-series-content > img {
+
+        width: 100%;
+
+        height: 190px;
+
+    }
+
+    .latest-series-info h3 {
+
+        font-size: 16px;
+
+    }
+
+    .sermon-item {
+
+        flex-wrap: wrap;
+
+    }
+
+    .sermon-watch-btn {
+
+        margin-left: auto;
+
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 420px) {
+
+    .sermons-hero h1 {
+
+        font-size: 31px;
+
+    }
+
+    .sermons-feature {
+
+        gap: 7px;
+
+    }
+
+    .sermons-feature-icon {
+
+        width: 36px;
+
+        height: 36px;
+
+        min-width: 36px;
+
+        font-size: 15px;
+
+    }
+
+    .sermons-feature h3 {
+
+        font-size: 12px;
+
+    }
+
+    .sermons-feature p {
+
+        font-size: 10px;
+
+    }
+
+    .series-buttons {
+
+        gap: 5px;
+
+    }
+
+    .watch-video-btn,
+    .listen-btn {
+
+        padding: 7px 10px;
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   FEATURED MESSAGE
+========================================= */
+
+.sermon-featured {
+
+    margin: 5px 2% 22px;
+
+    min-height: 175px;
+
+    padding: 25px 35px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(110deg, #082B59, #14549A);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    color: #FFFFFF;
+
+}
+
+.featured-message {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.featured-label {
+
+    color: #FFD700;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 9px;
+
+}
+
+.featured-message h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 29px;
+
+    color: #FFFFFF;
+
+    margin-bottom: 8px;
+
+}
+
+.featured-message p {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-style: italic;
+
+    font-size: 15px;
+
+    margin-bottom: 4px;
+
+}
+
+.featured-verse {
+
+    font-size: 13px;
+
+    color: #DCE9FF;
+
+}
+
+.featured-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 14px;
+
+    padding: 9px 16px;
+
+    border-radius: 25px;
+
+    background: #FFFFFF;
+
+    color: #0B3970;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+}
+
+.featured-link:hover {
+
+    background: #FFD700;
+
+}
+
+.featured-icon {
+
+    font-size: 115px;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    padding-right: 35px;
+
+}
+
+
+/* =========================================
+   SERMON SERIES
+========================================= */
+
+.sermon-series-section {
+
+    padding: 5px 2% 25px;
+
+    background: #FFFFFF;
+
+}
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+
+}
+
+.section-subtitle {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    color: #1261C9;
+
+    margin-bottom: 4px;
+
+}
+
+.section-heading h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 27px;
+
+    color: #082B59;
+
+}
+
+.series-view-all {
+
+    color: #0B3970;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    text-decoration: none;
+
+}
+
+
+/* SERIES GRID */
+
+.sermon-series-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+}
+
+.series-card {
+
+    padding: 19px;
+
+    border: 1px solid #DFE8F5;
+
+    border-radius: 10px;
+
+    background: #FFFFFF;
+
+    transition: .3s;
+
+}
+
+.series-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 5px 16px rgba(8, 43, 89, 0.09);
+
+    border-color: #B5CBEA;
+
+}
+
+.series-card-icon {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 9px;
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+
+}
+
+.faith-icon {
+
+    background: #E7F0FF;
+
+    color: #145CB8;
+
+}
+
+.grace-icon {
+
+    background: #FCE8EF;
+
+    color: #C34170;
+
+}
+
+.prayer-icon {
+
+    background: #E8F5ED;
+
+    color: #328357;
+
+}
+
+.hope-icon {
+
+    background: #FFF4DA;
+
+    color: #C68B17;
+
+}
+
+.series-card h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 18px;
+
+    color: #082B59;
+
+    margin-bottom: 7px;
+
+}
+
+.series-card p {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #4A5870;
+
+    min-height: 42px;
+
+    margin-bottom: 12px;
+
+}
+
+.series-card > span {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #EEF4FF;
+
+    color: #1254A0;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================
+   SCRIPTURE OF THE WEEK
+========================================= */
+
+.scripture-week {
+
+    margin: 0 2% 25px;
+
+    padding: 22px 28px;
+
+    border: 1px solid #DCE6F4;
+
+    border-radius: 10px;
+
+    background: #F1F5FC;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    overflow: hidden;
+
+}
+
+.scripture-week-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    min-width: 55px;
+
+    border-radius: 50%;
+
+    background: #125CB8;
+
+    color: #FFFFFF;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+}
+
+.scripture-week-content span {
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+
+    color: #1261C9;
+
+}
+
+.scripture-week-content h2 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 23px;
+
+    color: #082B59;
+
+    margin: 5px 0;
+
+}
+
+.scripture-week-content p {
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 13px;
+
+    color: #52647D;
+
+}
+
+.scripture-week-decoration {
+
+    margin-left: auto;
+
+    font-size: 75px;
+
+    color: rgba(18, 97, 201, 0.08);
+
+    padding-right: 20px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .sermon-series-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .sermon-featured {
+
+        padding: 22px;
+
+        margin: 10px 3% 18px;
+
+    }
+
+    .featured-message h2 {
+
+        font-size: 23px;
+
+    }
+
+    .featured-message p {
+
+        font-size: 13px;
+
+    }
+
+    .featured-icon {
+
+        font-size: 65px;
+
+        padding-right: 0;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 22px;
+
+    }
+
+    .sermon-series-section {
+
+        padding: 5px 3% 20px;
+
+    }
+
+    .sermon-series-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+    }
+
+    .series-card {
+
+        padding: 14px;
+
+    }
+
+    .series-card h3 {
+
+        font-size: 15px;
+
+    }
+
+    .series-card p {
+
+        font-size: 12px;
+
+    }
+
+    .scripture-week {
+
+        margin: 0 3% 20px;
+
+        padding: 17px;
+
+        gap: 12px;
+
+    }
+
+    .scripture-week-content h2 {
+
+        font-size: 18px;
+
+    }
+
+    .scripture-week-decoration {
+
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .sermon-series-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
