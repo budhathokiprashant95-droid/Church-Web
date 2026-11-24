@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>BIODATA FORM</h2>
+            <div class="photo-box">
+                <label for="photo">Upload Photo</label>
+                <input type="file" id="photo" accept="image/*">
+            </div>
+        </div>
+
+        <form action="#" method="POST">
+            <!-- 1. Personal Information -->
+            <h3>1. Personal Information</h3>
+            <div class="form-grid">
+                <div class="form-group full-width">
+                    <label>Full Name:</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth:</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="number" placeholder="Years">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Marital Status:</label>
+                    <select>
+                        <option value="">-- Select --</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nationality:</label>
+                    <input type="text" placeholder="e.g. Nepali">
+                </div>
+
+                <div class="form-group">
+                    <label>Blood Group:</label>
+                    <input type="text" placeholder="e.g. O+">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Languages Known:</label>
+                    <input type="text" placeholder="e.g. Nepali, English, Hindi">
+                </div>
+            </div>
+
+            <!-- 2. Contact Details -->
+            <h3>2. Contact Details</h3>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input type="tel" placeholder="+977-98XXXXXXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address:</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Current Address:</label>
+                    <input type="text" placeholder="Municipality, Ward, District">
+                </div>
+
+                <div class="form-group full-width">
+                    <label>Permanent Address:</label>
+                    <input type="text" placeholder="Municipality, Ward, District">
+                </div>
+            </div>
+
+            <!-- 3. Family Background -->
+            <h3>3. Family Background</h3>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Father's Name:</label>
+                    <input type="text" placeholder="Enter father's name">
+                </div>
+
+                <div class="form-group">
+                    <label>Father's Occupation:</label>
+                    <input type="text" placeholder="Enter occupation">
+                </div>
+
+                <div class="form-group">
+                    <label>Mother's Name:</label>
+                    <input type="text" placeholder="Enter mother's name">
+                </div>
+
+                <div class="form-group">
+                    <label>Mother's Occupation:</label>
+                    <input type="text" placeholder="Enter occupation">
+                </div>
+            </div>
+
+            <!-- 4. Educational Qualifications -->
+            <h3>4. Educational Qualifications</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Level / Degree</th>
+                            <th>Institution / Board</th>
+                            <th>Year</th>
+                            <th>GPA / %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bachelor / Graduation</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Higher Secondary (+2)</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Secondary (SEE / 10th)</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 5. Skills & Identification -->
+            <h3>5. Skills & Identification</h3>
+            <div class="form-grid">
+                <div class="form-group full-width">
+                    <label>Technical / Computer Skills:</label>
+                    <input type="text" placeholder="e.g. HTML, CSS, MS Office, Photoshop">
+                </div>
+
+                <div class="form-group">
+                    <label>Citizenship / National ID No.:</label>
+                    <input type="text" placeholder="Enter ID number">
+                </div>
+
+                <div class="form-group">
+                    <label>Hobbies / Interests:</label>
+                    <input type="text" placeholder="e.g. Coding, Reading, Sports">
+                </div>
+            </div>
+
+            <!-- Declaration -->
+            <div class="declaration">
+                <label>
+                    <input type="checkbox" required> 
+                    I hereby declare that all the information provided above is true and accurate to the best of my knowledge.
+                </label>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Date:</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Signature (Full Name):</label>
+                    <input type="text" placeholder="Type your name as signature">
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn-submit">Submit Form</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
